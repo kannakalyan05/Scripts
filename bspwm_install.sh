@@ -17,6 +17,7 @@ packages=(
     pcmanfm
     alacritty
     lxappearance
+    falkon
 )
 
 # Install the packages using pacman
