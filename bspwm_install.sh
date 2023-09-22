@@ -16,6 +16,7 @@ packages=(
     dmenu
     pcmanfm
     alacritty
+
 )
 
 # Install the packages using pacman
