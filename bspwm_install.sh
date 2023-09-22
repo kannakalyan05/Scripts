@@ -15,6 +15,8 @@ packages=(
     htop
     dmenu
     pcmanfm
+    alacritty
+    lxappearance
 )
 
 # Install the packages using pacman
