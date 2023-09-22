@@ -22,7 +22,7 @@ packages=(
 
 # Install the packages using pacman
 sudo pacman -S "${packages[@]}"
-su kalyan
+su $USER
 # Create configuration directories
 mkdir -p ~/.config/{bspwm,sxhkd}
 
