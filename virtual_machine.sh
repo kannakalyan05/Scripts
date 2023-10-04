@@ -7,8 +7,8 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 # Install required packages
-pacman -Syy
-pacman -S virt-manager virt-viewer qemu bridge-utils libguestfs
+pacman -Sy
+pacman -S virt-manager virt-viewer qemu bridge-utils libguestfs dnsmasq
 
 # Edit the libvirtd.conf file
 #config_file="/etc/libvirt/libvirtd.conf"
@@ -27,6 +27,9 @@ pacman -S virt-manager virt-viewer qemu bridge-utils libguestfs
 gpasswd -a $USER libvirt
 
 # Enable and start the libvirtd service
+systemctl enable dnsmasq
+systemctl start dnsmasq
+
 systemctl enable libvirtd.service
 systemctl start libvirtd.service
 
