@@ -13,4 +13,5 @@ systemctl start dnsmasq
 systemctl enable libvirtd.service
 systemctl start libvirtd.service
 systemctl status libvirtd.service
+sudo virsh net-autostart default
 sudo virsh net-start default
