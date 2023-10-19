@@ -6,12 +6,13 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 pacman -Sy
-pacman -S virt-manager virt-viewer qemu bridge-utils libguestfs dnsmasq
-gpasswd -a $USER libvirt
+pacman -S virt-manager qemu dnsmasq
+
 systemctl enable dnsmasq
 systemctl start dnsmasq
+
 systemctl enable libvirtd.service
 systemctl start libvirtd.service
-systemctl status libvirtd.service
+
 sudo virsh net-autostart default
 sudo virsh net-start default
