@@ -2,7 +2,7 @@
 
 fonts_list=(
   noto-fonts-emoji
-  ttf-comic-sans
+  ttf-ms-fonts
   sanskrit-fonts
   adobe-source-han-sans-otc-fonts
 )
