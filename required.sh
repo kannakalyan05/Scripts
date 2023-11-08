@@ -5,6 +5,7 @@ all_apps=(
   telegram-desktop
   libreoffice-fresh
   neovim
+  thorium-browser-bin
   kate
   qbittorrent
   mpv
