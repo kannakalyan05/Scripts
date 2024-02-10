@@ -76,6 +76,7 @@ fi
 
 # Refresh the font cache
 fc-cache -f -v
-cp gitt build /bin/
+cp gitt /bin/
+cp gitt /bin/
 # Call the function to install Grub theme
 install_grub_theme
