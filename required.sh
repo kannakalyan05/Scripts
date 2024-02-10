@@ -6,7 +6,6 @@ all_apps=(
   libreoffice-fresh
   neovim
   thorium-browser-bin
-  kate
   qbittorrent
   mpv
   eog
