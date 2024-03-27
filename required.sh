@@ -1,21 +1,13 @@
 #!/bin/bash
 
 all_apps=(
-  code
   telegram-desktop
-  libreoffice-fresh
   neovim
-  thorium-browser-bin
   qbittorrent
-  mpv
-  eog
 )
 
 fonts_list=(
   noto-fonts-emoji
-  ttf-ms-fonts
-  sanskrit-fonts
-  adobe-source-han-serif-otc-fonts
 )
 
 # Function to install software
@@ -75,7 +67,5 @@ fi
 
 # Refresh the font cache
 fc-cache -f -v
-cp gitt /bin/
-cp gitt /bin/
 # Call the function to install Grub theme
 install_grub_theme
