@@ -3,10 +3,12 @@
 all_apps=(
   telegram-desktop
   neovim
+  unzip
   qbittorrent
 )
 
 fonts_list=(
+  ttf-fira-code
   noto-fonts-emoji
 )
 
