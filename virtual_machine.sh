@@ -1,18 +1,14 @@
 #!/bin/bash
 
-if [ "$EUID" -ne 0 ]; then
-  echo "Please run this script as root."
-  exit 1
-fi
+sudo pacman -Sy
+sudo pacman -S archlinux-keyring
+sudo pacman -S qemu-desktop virt-manager virt-viewer dnsmasq vde2 bridge-utils openbsd-netcat
+yay -S ebtables iptables
+sudo pacman -S libguestfs
+sudo systemctl enable libvirtd.service
+sudo systemctl start libvirtd.service
+sudo usermod -a -G libvirt,audio,video $(whoami)
+sudo systemctl restart libvirtd.service
 
-pacman -Sy
-pacman -S virt-manager qemu dnsmasq
+echo "All steps completed successfully."
 
-systemctl enable dnsmasq
-systemctl start dnsmasq
-
-systemctl enable libvirtd.service
-systemctl start libvirtd.service
-
-sudo virsh net-autostart default
-sudo virsh net-start default
