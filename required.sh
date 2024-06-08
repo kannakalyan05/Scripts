@@ -1,29 +1,5 @@
 #!/bin/bash
 
-all_apps=(
-  telegram-desktop
-  neovim
-  unzip
-  qbittorrent
-)
-
-fonts_list=(
-  ttf-fira-code
-  noto-fonts-emoji
-)
-
-# Function to install software
-install_software() {
-  # First, check if the package is already installed
-  if yay -Q $1 &>> /dev/null ; then
-    echo -e "$1 is already installed."
-  else
-    # Package not found, so install it
-    echo "Now installing $1 ."
-    yay -S $1
-  fi
-}
-
 # Function to install Grub theme
 install_grub_theme() {
   # Ask the user if they want to install the Grub theme
@@ -49,25 +25,6 @@ install_grub_theme() {
   fi
 }
 
-clear
 
-# Install all apps
-read -rep $'[\e[1;33mACTION\e[0m] - Would you like to install all apps? (y,n) ' INST
-if [[ $INST == "Y" || $INST == "y" ]]; then
-    for SOFTWR in "${all_apps[@]}"; do
-        install_software "$SOFTWR"
-    done
-fi
-
-# Install font packages
-read -rep $'[\e[1;33mACTION\e[0m] - Would you like to install the font packages? (y,n) ' INST
-if [[ $INST == "Y" || $INST == "y" ]]; then
-    for SOFTWR in "${fonts_list[@]}"; do
-        install_software "$SOFTWR"
-    done
-fi
-
-# Refresh the font cache
-fc-cache -f -v
 # Call the function to install Grub theme
 install_grub_theme
