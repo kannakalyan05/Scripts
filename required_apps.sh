@@ -1,14 +1,21 @@
 #!/bin/bash
 
 all_apps=(
+  gimp
+  gwenview
   telegram-desktop
+  thorium-browser-bin
   neovim
-  unzip
   qbittorrent
+  unzip
+  mpv
+  tor-browser-bin
+  visual-studio-code-bin
 )
 
 fonts_list=(
   ttf-firacode-nerd
+  noto-fonts-cjk
   noto-fonts-emoji
 )
 
@@ -21,7 +28,7 @@ install_software() {
   else
     # Package not found, so install it
     echo "Now installing $1 ."
-    yay -S $1
+    yay -S $1 --needed
   fi
 }
 

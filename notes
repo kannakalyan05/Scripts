@@ -14,7 +14,6 @@ xorg-server
 xorg-xinit
 
 
-
 # AMD open-source
 
 libva-mesa-driver
@@ -24,7 +23,6 @@ xf86-video-amdgpu
 xf86-video-ati
 xorg-server
 xorg-xinit
-
 
 
 # Intel open-source
@@ -37,7 +35,6 @@ xorg-server
 xorg-xinit
 
 
-
 # Nvidia open kernel for latest GPUs
 
 nvidia-open
@@ -47,7 +44,6 @@ xorg-server
 xorg-xinit
 
 
-
 # Nvidia open-source
 
 libva-mesa-driver
@@ -55,7 +51,6 @@ mesa
 xf86-video-nouveau
 xorg-server
 xorg-xinit
-
 
 
 # Nvidia Proprietary
