@@ -6,7 +6,7 @@ amd_open_source=("libva-mesa-driver" "mesa" "vulkan-radeon" "xf86-video-amdgpu" 
 intel_open_source=("intel-media-driver" "libva-intel-driver" "mesa" "vulkan-intel" "xorg-server" "xorg-xinit")
 nvidia_open_kernel=("nvidia-open" "dkms" "nvidia-open-dkms" "xorg-server" "xorg-xinit")
 nvidia_open_source=("libva-mesa-driver" "mesa" "xf86-video-nouveau" "xorg-server" "xorg-xinit")
-nvidia_proprietary=("dkms" "nvidia-dkms" "xorg-server" "xorg-xinit")
+nvidia_proprietary=("nvidia" "nvidia-utils" "nvidia-settings" "xorg-server" "xorg-xinit")
 vmware_open_source=("mesa" "xf86-video-vmware" "xorg-server" "xorg-xinit")
 
 # Function to install packages
