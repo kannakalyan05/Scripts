@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 # 1. Add custom aliases to the end of .zshrc
 echo "Adding custom aliases to .zshrc..."
