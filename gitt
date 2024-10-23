@@ -19,5 +19,3 @@ if [ -d .git ]; then
 else
     echo "Not a Git repository."
 fi
-
-

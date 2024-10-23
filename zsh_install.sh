@@ -17,4 +17,3 @@ EOF
 source ~/.zshrc
 
 echo "Zsh setup complete! Please restart your terminal or log out and log back in to start using Zsh."
-

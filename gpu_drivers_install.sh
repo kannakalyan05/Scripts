@@ -41,4 +41,3 @@ case $choice in
 esac
 
 echo "Installation complete."
-

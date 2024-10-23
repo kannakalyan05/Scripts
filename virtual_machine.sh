@@ -41,4 +41,3 @@ sudo virsh net-autostart default
 
 echo "KVM/QEMU/Virt Manager installation completed successfully."
 echo "Please restart your system with 'sudo reboot' to apply changes."
-
