@@ -37,7 +37,7 @@ sudo sed -i 's/group = "your username"/group = "$(whoami)"/' /etc/libvirt/qemu.c
 sudo systemctl restart libvirtd.service
 
 # Autostart default network
-sudo virsh net-autostart default
+sudo virsh net-start default
 
 echo "KVM/QEMU/Virt Manager installation completed successfully."
 echo "Please restart your system with 'sudo reboot' to apply changes."
