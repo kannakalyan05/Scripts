@@ -36,8 +36,14 @@ sudo sed -i 's/group = "your username"/group = "$(whoami)"/' /etc/libvirt/qemu.c
 # Restart libvirtd service
 sudo systemctl restart libvirtd.service
 
-# Autostart default network
+# Start the default network for this session
 sudo virsh net-start default
+
+# Add vi-on and vi-off aliases to both .bashrc and .zshrc
+echo -e "\n# Aliases for managing libvirt" | tee -a ~/.bashrc ~/.zshrc
+echo "alias vi-on='sudo systemctl start libvirtd && sudo virsh net-start default'" | tee -a ~/.bashrc ~/.zshrc
+echo "alias vi-off='sudo virsh net-destroy default && sudo systemctl stop libvirtd'" | tee -a ~/.bashrc ~/.zshrc
 
 echo "KVM/QEMU/Virt Manager installation completed successfully."
 echo "Please restart your system with 'sudo reboot' to apply changes."
+
