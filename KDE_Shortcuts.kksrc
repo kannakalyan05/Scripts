@@ -9,11 +9,11 @@ Switch to Next Keyboard Layout=
 [StandardShortcuts]
 AboutApp=
 AboutKDE=
-Activate Next Tab=Ctrl+]; Ctrl+PgDown
-Activate Previous Tab=Ctrl+[; Ctrl+PgUp
+Activate Next Tab=Ctrl+PgDown; Ctrl+]
+Activate Previous Tab=Ctrl+PgUp; Ctrl+[
 ActualSize=Ctrl+0
 AddBookmark=Ctrl+B
-Back=Back; Alt+Left
+Back=Alt+Left; Back
 BackwardWord=Ctrl+Left
 Begin=Ctrl+Home
 BeginningOfLine=Home
@@ -112,7 +112,7 @@ mute=Volume Mute
 
 [ksmserver][Global Shortcuts]
 Halt Without Confirmation=
-Lock Session=Meta+L; Screensaver
+Lock Session=Screensaver; Meta+L
 Log Out=Alt+F4; Ctrl+Alt+Del
 Log Out Without Confirmation=
 LogOut=
@@ -294,6 +294,9 @@ stopmedia=Media Stop
 [org.kde.dolphin.desktop][Global Shortcuts]
 _launch=Meta+E
 
+[org.kde.kcalc.desktop][Global Shortcuts]
+_launch=Calculator
+
 [org.kde.konsole.desktop][Global Shortcuts]
 NewTab=
 NewWindow=
@@ -337,7 +340,7 @@ PowerOff=Power Off
 Sleep=Sleep
 Toggle Keyboard Backlight=Keyboard Light On/Off
 Turn Off Screen=
-powerProfile=Meta+B; Battery
+powerProfile=Battery; Meta+B
 
 [plasmashell][Global Shortcuts]
 activate application launcher=Meta
@@ -353,6 +356,7 @@ activate task manager entry 8=
 activate task manager entry 9=
 activate widget 160=
 activate widget 187=
+activate widget 250=
 activate widget 71=
 clear-history=Meta+Ctrl+C
 clipboard_action=
