@@ -1,0 +1,33 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, red, green, blue, pink); /* Four-color gradient */
+    background-size: 200% 200%; /* Smooth animation effect */
+    animation: gradientAnimation 10s infinite; /* Animation for shifting colors */
+    color: #fff; /* White text color */
+}
+
+.container {
+    text-align: center;
+}
+
+.search-bar {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #444; /* Darker border */
+    border-radius: 5px;
+    background-color: #282828; /* Slightly lighter background for search bar */
+    color: #fff; /* White text color */
+}
+
+/* Optional: Add animation to the gradient */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
