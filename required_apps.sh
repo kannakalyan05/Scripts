@@ -3,10 +3,8 @@
 all_apps=(
   gimp
   gwenview
-  telegram-desktop
-  thorium-browser-bin
+  firefox
   neovim
-  qbittorrent
   unzip
   mpv
   tor-browser-bin
@@ -16,6 +14,7 @@ all_apps=(
 fonts_list=(
   ttf-firacode-nerd
   noto-fonts-cjk
+  ttf-ms-fonts
   noto-fonts-emoji
 )
 
