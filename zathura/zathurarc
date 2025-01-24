@@ -17,7 +17,9 @@ set scroll-step 100
 # Zoom settings
 set zoom-min 10
 
-# Map j and k for page navigation
+#map j navigate next and k for previous
+unmap j
+unmap k
 map j navigate next
 map k navigate previous
 
