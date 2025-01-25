@@ -16,6 +16,7 @@ alias dct="deactivate"
 alias cod="cd ~/Desktop/Coding"
 alias codp="cd ~/Desktop/Coding/python"
 alias cc="cd .."
+alias clr="clear"
 # alias =""
 EOF
 
