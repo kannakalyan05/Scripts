@@ -1,0 +1,49 @@
+
+# Zathura configuration file
+# See man `man zathurarc`
+
+# Open document in fit-width mode by default
+set adjust-open "best-fit"
+
+# One page per row by default
+set pages-per-row 1
+
+# Stop at page boundaries
+set scroll-page-aware "true"
+set smooth-scroll "true"
+set scroll-full-overlap 0.01
+set scroll-step 100
+
+# Zoom settings
+set zoom-min 10
+
+#map j navigate next and k for previous
+unmap j
+unmap k
+map j navigate next
+map k navigate previous
+
+# Map other custom keys
+unmap f
+map f toggle_fullscreen
+map [fullscreen] f toggle_fullscreen
+
+# Rendering settings
+set render-loading "false"
+set scroll-step 50
+
+# Font and UI settings (optional, customize to your liking)
+# set font "FiraCode 12"
+# set default-bg "#000000" #00
+# set default-fg "#ffffff" #01
+# set statusbar-fg "#B0B0B0" #04
+# set statusbar-bg "#202020" #01
+# set inputbar-bg "#151515" #00 currently not used
+# set inputbar-fg "#FFFFFF" #02
+# set highlight-color "#F4BF75" #0A
+# set highlight-active-color "#6A9FB5" #0D
+# set completion-bg "#303030" #02
+# set completion-fg "#E0E0E0" #0C
+
+# Debugging or Logging (optional)
+# set debug "true"

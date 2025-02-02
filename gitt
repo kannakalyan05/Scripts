@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Generate the commit message
+commit_message="Last updated on $(date +'%d/%m/%Y %H:%M:%S')"
+
+# Get the current working directory (the directory where the script is executed)
+cwd=$(pwd)
+
+# Change to the current working directory
+cd "$cwd" || exit 1
+
+# Check if it's a Git repository
+if [ -d .git ]; then
+    # Git commands
+    git add .
+    git status
+    git commit -m "$commit_message" || exit 2
+    git push || exit 3
+else
+    echo "Not a Git repository."
+fi
