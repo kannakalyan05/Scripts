@@ -60,13 +60,6 @@ fi
 sudo virsh net-autostart --disable default
 sudo systemctl disable libvirtd
 
-# Add vi-on and vi-off aliases to both .bashrc and .zshrc
-echo -e "\n# Aliases for managing libvirt and networks" | tee -a ~/.bashrc ~/.zshrc
-grep -qxF 'alias vmon=' ~/.bashrc || echo "alias vmon='sudo systemctl start libvirtd && sudo virsh net-start default'" >> ~/.bashrc
-grep -qxF 'alias vmoff=' ~/.bashrc || echo "alias vmoff='sudo virsh net-destroy default && sudo systemctl stop libvirtd'" >> ~/.bashrc
-grep -qxF 'alias vmon=' ~/.zshrc || echo "alias vmon='sudo systemctl start libvirtd && sudo virsh net-start default'" >> ~/.zshrc
-grep -qxF 'alias vmoff=' ~/.zshrc || echo "alias vmoff='sudo virsh net-destroy default && sudo systemctl stop libvirtd'" >> ~/.zshrc
-
 clear
 echo -e "\e[31mKVM/QEMU/Virt Manager installation completed successfully.\e[0m"
 echo -e "\e[31mPlease restart your system with 'sudo reboot' to apply changes and activate group memberships.\e[0m"
